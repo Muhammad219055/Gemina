@@ -1,0 +1,78 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  padding: 0px 7%;
+}
+
+.prompt-space{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: sticky;
+  bottom: 0;
+  z-index: 50;
+}
+
+.prompt-space input{
+  padding: 12px 14px;
+  border-radius: 6px;
+  width: 100%;
+  border: 0;
+  outline: 2px solid transparent;
+}
+
+.prompt-space input:focus{
+  outline-color: cyan;
+}
+
+.prompt-space button{
+  border-radius: 6px;
+  border: 2px solid transparent;
+  color: cyan;
+  height: 40px;
+  transition: all .7s ease;
+  cursor: pointer;
+}
+
+.prompt-space button:hover{
+  border-color: cyan;
+  color: black;
+  background-color: cyan;
+  transform: scale(1.01);
+  font-weight: 500;
+}
+
+.response-screen{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h1,h2,h4,h3,h5,h6{
+  margin: 0px;
+}
+
+.response-screen h2{
+  font-size: 52px;
+  text-align: center;
+}
+
+
+.response-screen h4{
+  text-align: center;
+  font-size: 22px;
+  color: rgb(176, 176, 176);
+}
+
+.response-screen h6{
+  text-align: center;
+  font-size: 18px;
+  color: rgb(112, 112, 112);
+}
