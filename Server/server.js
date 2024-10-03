@@ -2,7 +2,7 @@ const express = require('express');
 const http = require('http');
 const cors = require('cors');
 const { GoogleGenerativeAI } = require("@google/generative-ai"); 
-const genAI = new GoogleGenerativeAI('AIzaSyDNqHhaRBt4MhQO_y5livO5FP5DZEn41kU');
+const genAI = new GoogleGenerativeAI('');
 
 const corsOptions = {
   origin: 'http://localhost:5173',
